@@ -1,0 +1,1254 @@
+{
+ "schema_version": "immutable_table_v1",
+ "manifest_ref": "manifest_v1 + amendments 001-020",
+ "paired_schema_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+ "table_builder_sha256": "d44049d4fb30837fe4c2f98cf445660a4b7a1ad78a05a8e5f4ed2bdc37d05f3b",
+ "anchor": {
+  "s_pair_raw_reference": -16.38648786047052,
+  "anchor_window_rule_id": "TWO_PARTICLE_50D_FULL_HORIZON_V1",
+  "anchor_peak_eh_raw": 0.08948144393844921,
+  "anchor_peak_none_raw": 0.0748185779901015,
+  "harmonized_admissible_window_anchor_reference": -14.276228744463094,
+  "anchor_reference_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+  "anchor_reference_window_end_reasons": [
+   "y_star_limit",
+   "y_star_limit"
+  ],
+  "anchor_reference_legacy_name": "contact_limited_anchor_shift_reference"
+ },
+ "rows": [
+  {
+   "comparison_id": "N-1-MDF",
+   "family": "N-1",
+   "pairing_class": "matched_current_version",
+   "schema_version": "immutable_table_v1",
+   "manifest_ref": "manifest_v1 + amendments 001-020",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_shift_definition_id": "ABL_NONE_MINUS_EH_OVER_EH_V1",
+   "sampling_alignment_rule_id": null,
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "coordinate_system_id": "PHYSICAL_DOMAIN_COORDINATES_V1",
+   "paired_window_policy": "ARM_LOCAL_PRECONTACT_V1",
+   "admissibility_helper_sha256": "table_builder_sha256",
+   "claim_generation_allowed": false,
+   "analysis_window_definition_id": "TALL60_ARMLOCAL_PRECONTACT_YSTAR51P5_STORED_SAMPLE_V1",
+   "run_integrity_status_eh": "ok",
+   "run_integrity_status_none": "ok",
+   "expected_run_contract_eh": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_EXT60D_MDF_EXPLICIT_HISTORY"
+   },
+   "expected_run_contract_none": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_EXT60D_MDF_NONE"
+   },
+   "first_record_eh": {
+    "first_record_particle_state_sha256": "180312121a5cb144c8cb5d7f8c26aa89049d803c5fb550a84b073e097567574c",
+    "first_record_step": 500,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "first_record_none": {
+    "first_record_particle_state_sha256": "fb4bde57213fcf6dabd60b795cc68bccbac1c9d2bc04ffd34afe4eb22310d960",
+    "first_record_step": 500,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "pair_integrity_status": "ok",
+   "masked_pair_config_sha256": "21a239302d5d75f3b3524b88fc1fbbbd631d45d1e43829af86701af1c8d85eb2",
+   "resolved_config_keyset_sha256": "97ca280728dc178b79c13ef7dd3be0eddf0cd32a17dec7ed8cc4d119ae9f8f12",
+   "eh_resolved_config_sha256": "4ec9f3a77b27569a591736a557e2d39287fd878673d879a1e9ea752be8c8f075",
+   "none_resolved_config_sha256": "b57c2479a0ef1e32439b25fb9528a0c7e8eaacffc7b96751c497bb8b65446ff2",
+   "admissible_eh": {
+    "n_input": 90,
+    "n_admissible": 90,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_eh_window_end_step": 45000,
+   "arm_eh_window_end_t_star": 36.93683091170654,
+   "arm_eh_window_end_reason": "run_end",
+   "arm_eh_window_end_trigger_set": [],
+   "arm_eh_contact_detected": false,
+   "admissible_none": {
+    "n_input": 93,
+    "n_admissible": 93,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_none_window_end_step": 46500,
+   "arm_none_window_end_t_star": 38.168058608763424,
+   "arm_none_window_end_reason": "run_end",
+   "arm_none_window_end_trigger_set": [],
+   "arm_none_contact_detected": false,
+   "window_end_precedence_rule_id": "CONTACT_BEFORE_YSTAR_V1",
+   "comparison_scope": "arm_local_finite_window",
+   "configured_max_steps": 72000,
+   "termination_contract_eh": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 45000,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "run_end_limited",
+    "metric_eligibility_status": "blocked",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.01804493026286469,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 45000,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "termination_contract_none": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 46500,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "run_end_limited",
+    "metric_eligibility_status": "blocked",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.0515991015616315,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 46500,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "signed_ablation_shift_pct": null
+  },
+  {
+   "comparison_id": "N-1-DFC",
+   "family": "N-1",
+   "pairing_class": "matched_current_version",
+   "schema_version": "immutable_table_v1",
+   "manifest_ref": "manifest_v1 + amendments 001-020",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_shift_definition_id": "ABL_NONE_MINUS_EH_OVER_EH_V1",
+   "sampling_alignment_rule_id": null,
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "coordinate_system_id": "PHYSICAL_DOMAIN_COORDINATES_V1",
+   "paired_window_policy": "ARM_LOCAL_PRECONTACT_V1",
+   "admissibility_helper_sha256": "table_builder_sha256",
+   "claim_generation_allowed": false,
+   "analysis_window_definition_id": "TALL60_ARMLOCAL_PRECONTACT_YSTAR51P5_STORED_SAMPLE_V1",
+   "run_integrity_status_eh": "ok",
+   "run_integrity_status_none": "ok",
+   "expected_run_contract_eh": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_EXT60D_DFC_EXPLICIT_HISTORY"
+   },
+   "expected_run_contract_none": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_EXT60D_DFC_NONE"
+   },
+   "first_record_eh": {
+    "first_record_particle_state_sha256": "5d3c3cb0a909305fcdcf60dfcabb48d48506bcd05301d552485429c2269c4d70",
+    "first_record_step": 500,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "first_record_none": {
+    "first_record_particle_state_sha256": "fc2bd401b51e58f8364dee7ab2bc73e919e803da9d78def7713e5368357ee7f3",
+    "first_record_step": 500,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "pair_integrity_status": "ok",
+   "masked_pair_config_sha256": "61fca4ed2fdb5e3ef027e9d6ad1edba0e0ced1ef799a557af25dd758e86e76b8",
+   "resolved_config_keyset_sha256": "97ca280728dc178b79c13ef7dd3be0eddf0cd32a17dec7ed8cc4d119ae9f8f12",
+   "eh_resolved_config_sha256": "3e3fed81c319c7732c79b657ec2990f99f3699b9ef724d4422ec4dda43d7280d",
+   "none_resolved_config_sha256": "a49bc093b910059b342878f87cdddf4bc57637fab336262d31953eee80624f41",
+   "admissible_eh": {
+    "n_input": 92,
+    "n_admissible": 92,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_eh_window_end_step": 46000,
+   "arm_eh_window_end_t_star": 37.75764937641113,
+   "arm_eh_window_end_reason": "run_end",
+   "arm_eh_window_end_trigger_set": [],
+   "arm_eh_contact_detected": false,
+   "admissible_none": {
+    "n_input": 94,
+    "n_admissible": 94,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_none_window_end_step": 47000,
+   "arm_none_window_end_t_star": 38.57846784111572,
+   "arm_none_window_end_reason": "run_end",
+   "arm_none_window_end_trigger_set": [],
+   "arm_none_contact_detected": false,
+   "window_end_precedence_rule_id": "CONTACT_BEFORE_YSTAR_V1",
+   "comparison_scope": "arm_local_finite_window",
+   "configured_max_steps": 72000,
+   "termination_contract_eh": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 46000,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "run_end_limited",
+    "metric_eligibility_status": "blocked",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.05881605280236624,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 46000,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "termination_contract_none": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 47000,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "run_end_limited",
+    "metric_eligibility_status": "blocked",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.032178357616247766,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 47000,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "signed_ablation_shift_pct": null
+  },
+  {
+   "comparison_id": "N-4-NY961",
+   "family": "N-4",
+   "pairing_class": "matched_current_version",
+   "schema_version": "immutable_table_v1",
+   "manifest_ref": "manifest_v1 + amendments 001-020",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_shift_definition_id": "ABL_NONE_MINUS_EH_OVER_EH_V1",
+   "sampling_alignment_rule_id": "NATIVE_COMMON_TSTAR_GRID_REFINEMENT_V1",
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "coordinate_system_id": "PHYSICAL_DOMAIN_COORDINATES_V1",
+   "paired_window_policy": "ARM_LOCAL_PRECONTACT_V1",
+   "admissibility_helper_sha256": "table_builder_sha256",
+   "claim_generation_allowed": false,
+   "analysis_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+   "run_integrity_status_eh": "ok",
+   "run_integrity_status_none": "ok",
+   "expected_run_contract_eh": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_GRID_NY961_EXPLICIT_HISTORY"
+   },
+   "expected_run_contract_none": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_GRID_NY961_NONE"
+   },
+   "first_record_eh": {
+    "first_record_particle_state_sha256": "011a0b318e66eaa95450868f2c958b8a8db96546da736943e8e37c1ea8c6a013",
+    "first_record_step": 720,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "first_record_none": {
+    "first_record_particle_state_sha256": "558d52a4335083dbfacf56ce88cad3595c1955e1770a9febd4acbe52aa8d3325",
+    "first_record_step": 720,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "pair_integrity_status": "ok",
+   "masked_pair_config_sha256": "ee61ca8823e6ba0b4696b386d5144b50da50bfc1bb8ede644c7c9a39355ecdc7",
+   "resolved_config_keyset_sha256": "97ca280728dc178b79c13ef7dd3be0eddf0cd32a17dec7ed8cc4d119ae9f8f12",
+   "eh_resolved_config_sha256": "9426bf8c92cad2aea8d6894f0434e173fcec8f6c35e0966a4d6825aad0768c76",
+   "none_resolved_config_sha256": "5c4796cabe266fb238fd19db480779243dc1045e65897d22481005ccf31f0d71",
+   "admissible_eh": {
+    "n_input": 75,
+    "n_admissible": 45,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_eh_window_end_step": 32400,
+   "arm_eh_window_end_t_star": 18.468415455853275,
+   "arm_eh_window_end_reason": "y_star_limit",
+   "arm_eh_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_eh_contact_detected": false,
+   "admissible_none": {
+    "n_input": 77,
+    "n_admissible": 47,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_none_window_end_step": 33840,
+   "arm_none_window_end_t_star": 19.289233920557866,
+   "arm_none_window_end_reason": "y_star_limit",
+   "arm_none_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_none_contact_detected": false,
+   "window_end_precedence_rule_id": "CONTACT_BEFORE_YSTAR_V1",
+   "comparison_scope": "arm_local_finite_window",
+   "configured_max_steps": 86400,
+   "termination_contract_eh": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 54000,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.034922113637442465,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 54000,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "termination_contract_none": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 55440,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.020211981444054672,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 55440,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "kernel_id": "peskin4pt",
+   "min_surface_gap_over_d": 0.5224228143053422,
+   "min_surface_gap_dx": 50.15259017331285,
+   "gap_sampling_scope": "stored_samples_only",
+   "history_sampling_interval_steps": 720,
+   "continuous_time_overlap_exclusion": "not_evaluated",
+   "surface_gap_at_eh_peak_dx": 548.32613585323,
+   "surface_gap_at_none_peak_dx": 541.5608198758334,
+   "marker_retraction_dx": 0.0,
+   "marker_radius_bound_status": "guaranteed_by_construction",
+   "kernel_overlap_test_id": "CONSERVATIVE_P4_EUCLIDEAN_CLEARANCE_V1",
+   "kernel_support_halfwidth_cells": 2.0,
+   "kernel_clearance_threshold_dx": 5.656854249492381,
+   "kernel_overlap_excluded_at_stored_samples": true,
+   "pair_cadence_status": "ok",
+   "pair_common_prefix_count": 45,
+   "interpolation_applied": false,
+   "arm_eh_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "resolved_transient_peak",
+    "class_eps_high": "resolved_transient_peak",
+    "completion_status": "resolved_transient_peak",
+    "observable_status": "admissible_interior_window_peak",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C2_threshold_agreement",
+    "observable_rule_id": "B4_interior_peak_flat_tail",
+    "right_censor_support": "not_applicable",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "arm_none_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "resolved_transient_peak",
+    "class_eps_high": "resolved_transient_peak",
+    "completion_status": "resolved_transient_peak",
+    "observable_status": "right_edge_censored_window_maximum",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C2_threshold_agreement",
+    "observable_rule_id": "B2_tail_theil_sen_rise",
+    "right_censor_support": "not_applicable",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "paired_claim_scope": "both_arms_resolved",
+   "paired_observable_status": "right_edge_limited",
+   "eh_peak_raw": 0.06822418813110234,
+   "none_peak_raw": 0.05777480974715347,
+   "signed_shift_raw": -15.316237056377908,
+   "ablation_direction": "negative",
+   "ablation_magnitude_pct": 15.316237056377908,
+   "signed_shift_display": -15.32,
+   "non_decisional_common_window_sensitivity": {
+    "window_rule_id": "COMMON_EARLIEST_WINDOW_V1",
+    "window_end_t_star": 18.468415455853275,
+    "signed_shift_pct": -15.316237056377908,
+    "role": "non_decisional_sensitivity"
+   },
+   "q_use": false
+  },
+  {
+   "comparison_id": "N-4-NY1281",
+   "family": "N-4",
+   "pairing_class": "matched_current_version",
+   "schema_version": "immutable_table_v1",
+   "manifest_ref": "manifest_v1 + amendments 001-020",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_shift_definition_id": "ABL_NONE_MINUS_EH_OVER_EH_V1",
+   "sampling_alignment_rule_id": "NATIVE_COMMON_TSTAR_GRID_REFINEMENT_V1",
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "coordinate_system_id": "PHYSICAL_DOMAIN_COORDINATES_V1",
+   "paired_window_policy": "ARM_LOCAL_PRECONTACT_V1",
+   "admissibility_helper_sha256": "table_builder_sha256",
+   "claim_generation_allowed": false,
+   "analysis_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+   "run_integrity_status_eh": "ok",
+   "run_integrity_status_none": "ok",
+   "expected_run_contract_eh": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_GRID_NY1281_EXPLICIT_HISTORY"
+   },
+   "expected_run_contract_none": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_GRID_NY1281_NONE"
+   },
+   "first_record_eh": {
+    "first_record_particle_state_sha256": "1b014b27e6cd4a8698cd247f67f5b10b797dbccccc52247127ef40912de8f2b4",
+    "first_record_step": 1280,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "first_record_none": {
+    "first_record_particle_state_sha256": "4ed16606c8abc65d0dabda9835ce12a619fa9e9b524ca7188a6d71abd23d84bb",
+    "first_record_step": 1280,
+    "particle_count": 2,
+    "particle_rho_ratios": [
+     1.5,
+     1.25
+    ],
+    "angular_velocity_included": false
+   },
+   "pair_integrity_status": "ok",
+   "masked_pair_config_sha256": "4054c9dfe1f5846867fdac1e91cd44b7237389a7b507e0cd9beb5ad509126090",
+   "resolved_config_keyset_sha256": "97ca280728dc178b79c13ef7dd3be0eddf0cd32a17dec7ed8cc4d119ae9f8f12",
+   "eh_resolved_config_sha256": "88b95fc83834787472b9c77a4115c7b1da0e7e8827c9f9fbd933c4390d133f9b",
+   "none_resolved_config_sha256": "76dd4e21ded654cd224b593ae104a8fd9a11d9c41a7fccf921404d9859c33db7",
+   "admissible_eh": {
+    "n_input": 74,
+    "n_admissible": 44,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_eh_window_end_step": 56320,
+   "arm_eh_window_end_t_star": 18.05800622350097,
+   "arm_eh_window_end_reason": "y_star_limit",
+   "arm_eh_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_eh_contact_detected": false,
+   "admissible_none": {
+    "n_input": 77,
+    "n_admissible": 47,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_none_window_end_step": 60160,
+   "arm_none_window_end_t_star": 19.289233920557855,
+   "arm_none_window_end_reason": "y_star_limit",
+   "arm_none_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_none_contact_detected": false,
+   "window_end_precedence_rule_id": "CONTACT_BEFORE_YSTAR_V1",
+   "comparison_scope": "arm_local_finite_window",
+   "configured_max_steps": 153600,
+   "termination_contract_eh": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 94720,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.003525470526463792,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 94720,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "termination_contract_none": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 98560,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.04749975743901125,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 98560,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "kernel_id": "peskin4pt",
+   "min_surface_gap_over_d": 0.5192365806709714,
+   "min_surface_gap_dx": 66.46228232588435,
+   "gap_sampling_scope": "stored_samples_only",
+   "history_sampling_interval_steps": 1280,
+   "continuous_time_overlap_exclusion": "not_evaluated",
+   "surface_gap_at_eh_peak_dx": 734.9104477977952,
+   "surface_gap_at_none_peak_dx": 727.6048960529204,
+   "marker_retraction_dx": 0.0,
+   "marker_radius_bound_status": "guaranteed_by_construction",
+   "kernel_overlap_test_id": "CONSERVATIVE_P4_EUCLIDEAN_CLEARANCE_V1",
+   "kernel_support_halfwidth_cells": 2.0,
+   "kernel_clearance_threshold_dx": 5.656854249492381,
+   "kernel_overlap_excluded_at_stored_samples": true,
+   "pair_cadence_status": "ok",
+   "pair_common_prefix_count": 44,
+   "interpolation_applied": false,
+   "arm_eh_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "resolved_transient_peak",
+    "class_eps_high": "resolved_transient_peak",
+    "completion_status": "resolved_transient_peak",
+    "observable_status": "admissible_interior_window_peak",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C2_threshold_agreement",
+    "observable_rule_id": "B4_interior_peak_flat_tail",
+    "right_censor_support": "not_applicable",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "arm_none_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "resolved_transient_peak",
+    "class_eps_high": "resolved_transient_peak",
+    "completion_status": "resolved_transient_peak",
+    "observable_status": "right_edge_censored_window_maximum",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C2_threshold_agreement",
+    "observable_rule_id": "B2_tail_theil_sen_rise",
+    "right_censor_support": "not_applicable",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "paired_claim_scope": "both_arms_resolved",
+   "paired_observable_status": "right_edge_limited",
+   "eh_peak_raw": 0.05151721110539138,
+   "none_peak_raw": 0.04335374359410988,
+   "signed_shift_raw": -15.846097519877546,
+   "ablation_direction": "negative",
+   "ablation_magnitude_pct": 15.846097519877546,
+   "signed_shift_display": -15.85,
+   "non_decisional_common_window_sensitivity": {
+    "window_rule_id": "COMMON_EARLIEST_WINDOW_V1",
+    "window_end_t_star": 18.05800622350097,
+    "signed_shift_pct": -15.846097519877546,
+    "role": "non_decisional_sensitivity"
+   },
+   "q_use": false
+  },
+  {
+   "comparison_id": "N-6",
+   "family": "N-6",
+   "pairing_class": "matched_current_version",
+   "schema_version": "immutable_table_v1",
+   "manifest_ref": "manifest_v1 + amendments 001-020",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_shift_definition_id": "ABL_NONE_MINUS_EH_OVER_EH_V1",
+   "sampling_alignment_rule_id": null,
+   "contact_crossing_rule_id": null,
+   "coordinate_system_id": "PHYSICAL_DOMAIN_COORDINATES_V1",
+   "paired_window_policy": "ARM_LOCAL_PRECONTACT_V1",
+   "admissibility_helper_sha256": "table_builder_sha256",
+   "claim_generation_allowed": false,
+   "analysis_window_definition_id": "STD24_SINGLE_YSTAR15P5_STORED_SAMPLE_V1",
+   "run_integrity_status_eh": "ok",
+   "run_integrity_status_none": "ok",
+   "expected_run_contract_eh": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "SINGLE_RHO125_NU001_DF_BGK_VERLET_EXPLICIT_HISTORY"
+   },
+   "expected_run_contract_none": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "SINGLE_RHO125_NU001_DF_BGK_VERLET_NONE"
+   },
+   "viscosity_contract_eh": {
+    "viscosity_mapping_contract_status": "ok",
+    "nu_phys_target": 0.01,
+    "nu_lattice_resolved": 0.03021664721155349,
+    "collision_relaxation_parameter_resolved": 0.5906499416346604,
+    "collision_viscosity_source_id": "CFG_RE_INIT_NU_V1",
+    "gravity_mapping_id": "PRESET_AR_NU_MAPPING_V1",
+    "g_lattice_resolved": 3.413333333333334e-05,
+    "reynolds_viscosity_source_id": "CFG_RE_INIT_NU_V1",
+    "re_target_check": true,
+    "gravity_selfconsistency_check": true,
+    "actual_gravity_match": true
+   },
+   "viscosity_contract_none": {
+    "viscosity_mapping_contract_status": "ok",
+    "nu_phys_target": 0.01,
+    "nu_lattice_resolved": 0.03021664721155349,
+    "collision_relaxation_parameter_resolved": 0.5906499416346604,
+    "collision_viscosity_source_id": "CFG_RE_INIT_NU_V1",
+    "gravity_mapping_id": "PRESET_AR_NU_MAPPING_V1",
+    "g_lattice_resolved": 3.413333333333334e-05,
+    "reynolds_viscosity_source_id": "CFG_RE_INIT_NU_V1",
+    "re_target_check": true,
+    "gravity_selfconsistency_check": true,
+    "actual_gravity_match": true
+   },
+   "first_record_eh": {
+    "first_record_particle_state_sha256": "c9b6f943b4ac2313cf9ce3ad8067239262f7b35c7d186fc0b3cd175f4ed13895",
+    "first_record_step": 100,
+    "particle_count": 1,
+    "particle_rho_ratios": [
+     null
+    ],
+    "angular_velocity_included": true
+   },
+   "first_record_none": {
+    "first_record_particle_state_sha256": "256b1568aa5965e1ddd82c29d55fc9c4d065e09f7ec02aec31473894b11bc284",
+    "first_record_step": 100,
+    "particle_count": 1,
+    "particle_rho_ratios": [
+     null
+    ],
+    "angular_velocity_included": true
+   },
+   "pair_integrity_status": "ok",
+   "masked_pair_config_sha256": "24ebc3c0d2ee83b0fc57be13ea92c68165e06971293b396b147f2bf6951823d2",
+   "resolved_config_keyset_sha256": "97ca280728dc178b79c13ef7dd3be0eddf0cd32a17dec7ed8cc4d119ae9f8f12",
+   "eh_resolved_config_sha256": "e117e7933c99269f82fefa55c72c63c03473a8096fcce7cd07bf48fa28bfbe07",
+   "none_resolved_config_sha256": "328fd1edea09f97d4a103b25c940c4fd2223efeb5cd309a71d3c2ccd0ca88ab6",
+   "admissible_eh": {
+    "n_input": 688,
+    "n_admissible": 687,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_eh_window_rule_id": "SINGLE_ARM_YSTAR_LIMIT_V1",
+   "arm_eh_window_end_step": 68700,
+   "arm_eh_window_end_t_star": 15.865585397330918,
+   "arm_eh_window_end_reason": "y_star_limit",
+   "arm_eh_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_eh_contact_detected": false,
+   "admissible_none": {
+    "n_input": 725,
+    "n_admissible": 724,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_none_window_rule_id": "SINGLE_ARM_YSTAR_LIMIT_V1",
+   "arm_none_window_end_step": 72400,
+   "arm_none_window_end_t_star": 16.720063795731562,
+   "arm_none_window_end_reason": "y_star_limit",
+   "arm_none_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_none_contact_detected": false,
+   "window_end_precedence_rule_id": "CONTACT_BEFORE_YSTAR_V1",
+   "comparison_scope": "arm_local_finite_window",
+   "configured_max_steps": 207846,
+   "termination_contract_eh": {
+    "termination_contract_id": "SINGLE_CONTACT_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_at_contact=True",
+    "allowed_termination_reasons": [
+     "contact",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "contact",
+    "actual_terminal_step": 68800,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.0005287571390067206,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 68800,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "termination_contract_none": {
+    "termination_contract_id": "SINGLE_CONTACT_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_at_contact=True",
+    "allowed_termination_reasons": [
+     "contact",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "contact",
+    "actual_terminal_step": 72500,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.0019750846710135453,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 72500,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "pair_cadence_status": "ok",
+   "pair_common_prefix_count": 687,
+   "interpolation_applied": false,
+   "arm_eh_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "unresolved_nonmonotone",
+    "class_eps_high": "unresolved_nonmonotone",
+    "completion_status": "unresolved_nonmonotone",
+    "observable_status": "admissible_interior_window_peak",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C2_threshold_agreement",
+    "observable_rule_id": "B4_interior_peak_flat_tail",
+    "right_censor_support": "not_applicable",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "arm_none_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "unresolved_nonmonotone",
+    "class_eps_high": "unresolved_nonmonotone",
+    "completion_status": "unresolved_nonmonotone",
+    "observable_status": "admissible_interior_window_peak",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C2_threshold_agreement",
+    "observable_rule_id": "B4_interior_peak_flat_tail",
+    "right_censor_support": "not_applicable",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "paired_claim_scope": "finite_window_only",
+   "paired_observable_status": "admissible_interior",
+   "eh_peak_raw": 0.043190292771740385,
+   "none_peak_raw": 0.04273073924670886,
+   "signed_shift_raw": -1.0640203979636247,
+   "ablation_direction": "negative",
+   "ablation_magnitude_pct": 1.0640203979636247,
+   "signed_shift_display": -1.06,
+   "non_decisional_common_window_sensitivity": {
+    "window_rule_id": "COMMON_EARLIEST_WINDOW_V1",
+    "window_end_t_star": 15.865585397330918,
+    "signed_shift_pct": -1.0640203979636247,
+    "role": "non_decisional_sensitivity"
+   },
+   "q_use": true,
+   "q_decision": 0.06493512092491867,
+   "q_raw_reference": 0.06493279139640314,
+   "q_denominator_frozen_pct": 16.3859,
+   "q_denominator_raw_pct": 16.38648786047052,
+   "q_definition_id": "Q_FROZEN_PAIR_ANCHOR_V1",
+   "q_comparability_scope": "cross_configuration_declared_window_peak_ratio",
+   "anchor_window_rule_id": "TWO_PARTICLE_50D_FULL_HORIZON_V1",
+   "control_window_rule_id": "SINGLE_ARM_YSTAR_LIMIT_V1",
+   "q_anchor_relation_check": {
+    "A_raw_gt_A_frozen": true,
+    "q_decision_ge_q_raw_reference": true
+   }
+  },
+  {
+   "comparison_id": "N-7",
+   "family": "N-7",
+   "pairing_class": "matched_current_version",
+   "schema_version": "immutable_table_v1",
+   "manifest_ref": "manifest_v1 + amendments 001-020",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_shift_definition_id": "ABL_NONE_MINUS_EH_OVER_EH_V1",
+   "sampling_alignment_rule_id": null,
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "coordinate_system_id": "PHYSICAL_DOMAIN_COORDINATES_V1",
+   "paired_window_policy": "ARM_LOCAL_PRECONTACT_V1",
+   "admissibility_helper_sha256": "table_builder_sha256",
+   "claim_generation_allowed": false,
+   "analysis_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+   "run_integrity_status_eh": "ok",
+   "run_integrity_status_none": "ok",
+   "expected_run_contract_eh": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_ISOLATED_LIGHT_EXPLICIT_HISTORY"
+   },
+   "expected_run_contract_none": {
+    "expected_run_contract_status": "ok",
+    "contract_mismatches": {},
+    "expected_config_case_id": "TWO_PARTICLE_ISOLATED_LIGHT_NONE"
+   },
+   "first_record_eh": {
+    "first_record_particle_state_sha256": "53792e061685d4787920e7d4cc32db9583e4fc567651052fd86b59290048f9ff",
+    "first_record_step": 500,
+    "particle_count": 1,
+    "particle_rho_ratios": [
+     null
+    ],
+    "angular_velocity_included": true
+   },
+   "first_record_none": {
+    "first_record_particle_state_sha256": "f93bba33f6c6859215edc53c44203c73603cf5e7c4017959d625c06234098f95",
+    "first_record_step": 500,
+    "particle_count": 1,
+    "particle_rho_ratios": [
+     null
+    ],
+    "angular_velocity_included": true
+   },
+   "expected_initial_particle_spec_sha256": "1b742539b5572ee01775df94fb5b5335598a01a0a7b65848e679c1a70d33d798",
+   "expected_particle_count": 1,
+   "light_identity_status": "ok",
+   "pair_integrity_status": "ok",
+   "masked_pair_config_sha256": "225ad871e3fdf5de27722c09e9b16752722c78e3e8d815b716bd10002cadb25e",
+   "resolved_config_keyset_sha256": "97ca280728dc178b79c13ef7dd3be0eddf0cd32a17dec7ed8cc4d119ae9f8f12",
+   "eh_resolved_config_sha256": "affe40ee3ea69b504883203935b69e14933f8868d1b3f8f0cb9cd9e80a663dad",
+   "none_resolved_config_sha256": "0cbe25742722b4c2dbfeadd4c3eaece7279a0c17853f1bb73d5f1da96f3b2332",
+   "admissible_eh": {
+    "n_input": 96,
+    "n_admissible": 38,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_eh_window_rule_id": "SINGLE_ARM_YSTAR_LIMIT_V1",
+   "arm_eh_window_end_step": 19000,
+   "arm_eh_window_end_t_star": 15.595550829387207,
+   "arm_eh_window_end_reason": "y_star_limit",
+   "arm_eh_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_eh_contact_detected": false,
+   "admissible_none": {
+    "n_input": 98,
+    "n_admissible": 40,
+    "n_violation": 0,
+    "contact_truncated": false
+   },
+   "arm_none_window_rule_id": "SINGLE_ARM_YSTAR_LIMIT_V1",
+   "arm_none_window_end_step": 20000,
+   "arm_none_window_end_t_star": 16.416369294091798,
+   "arm_none_window_end_reason": "y_star_limit",
+   "arm_none_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_none_contact_detected": false,
+   "window_end_precedence_rule_id": "CONTACT_BEFORE_YSTAR_V1",
+   "comparison_scope": "arm_local_finite_window",
+   "configured_max_steps": 60000,
+   "termination_contract_eh": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 48000,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.003623360827053723,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 48000,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "termination_contract_none": {
+    "termination_contract_id": "TWO_PARTICLE_OFFSET_STOP_V1",
+    "expected_stop_predicate": "sedimentation_stop_offset_d=2.0",
+    "allowed_termination_reasons": [
+     "offset",
+     "max_steps(safety cap \u2014 eligibility\ub294 \ucc3d \uc644\uacb0\ub85c \ubcc4\ub3c4 \ud310\uc815)"
+    ],
+    "actual_termination_reason": "offset",
+    "actual_terminal_step": 49000,
+    "runtime_termination_contract_status": "expected_stop_satisfied",
+    "analysis_window_completion_status": "complete_by_y_star_limit",
+    "metric_eligibility_status": "eligible_declared_finite_window",
+    "termination_reason_origin_id": "RUNTIME_SHOULD_STOP_V1",
+    "history_coordinate_encoding_id": "PYTHON_JSON_FLOAT_REPR_V1",
+    "history_coordinate_roundtrip_status": "roundtrip_safe_by_construction",
+    "stop_predicate_recomputed": true,
+    "stop_predicate_margin_raw": 0.02682121208721089,
+    "predicate_recompute_state_id": "SAME_STEP_LAST_STORED_RECORD_V1",
+    "stop_evaluation_step": 49000,
+    "stop_predicate_consistency_status": "ok"
+   },
+   "pair_cadence_status": "ok",
+   "pair_common_prefix_count": 38,
+   "interpolation_applied": false,
+   "arm_eh_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "right_censored",
+    "class_eps_high": "right_censored",
+    "completion_status": "right_censored",
+    "observable_status": "right_edge_censored_window_maximum",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C1_right_censored_precedence",
+    "observable_rule_id": "B1_post_peak_samples_lt8",
+    "right_censor_support": "epsilon_independent_edge_peak",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "arm_none_judgment": {
+    "eps_low_pct": 0.8,
+    "eps_high_pct": 0.9,
+    "class_eps_low": "right_censored",
+    "class_eps_high": "right_censored",
+    "completion_status": "right_censored",
+    "observable_status": "right_edge_censored_window_maximum",
+    "value_eps_low": 100.0,
+    "value_eps_high": 100.0,
+    "consensus_rule_id": "C1_right_censored_precedence",
+    "observable_rule_id": "B1_post_peak_samples_lt8",
+    "right_censor_support": "epsilon_independent_edge_peak",
+    "qa_status": "ok",
+    "claim_generation_allowed": true,
+    "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+    "manifest_ref": "manifest_v1 + amendments 001-011"
+   },
+   "paired_claim_scope": "censoring_not_excluded",
+   "paired_observable_status": "right_edge_limited",
+   "eh_peak_raw": 0.07738305124829689,
+   "none_peak_raw": 0.07671852847777941,
+   "signed_shift_raw": -0.8587445956159673,
+   "ablation_direction": "negative",
+   "ablation_magnitude_pct": 0.8587445956159673,
+   "signed_shift_display": -0.86,
+   "non_decisional_common_window_sensitivity": {
+    "window_rule_id": "COMMON_EARLIEST_WINDOW_V1",
+    "window_end_t_star": 15.595550829387207,
+    "signed_shift_pct": -1.3523091455510248,
+    "role": "non_decisional_sensitivity"
+   },
+   "q_use": true,
+   "q_decision": 0.05240753303852503,
+   "q_raw_reference": 0.05240565293356946,
+   "q_denominator_frozen_pct": 16.3859,
+   "q_denominator_raw_pct": 16.38648786047052,
+   "q_definition_id": "Q_FROZEN_PAIR_ANCHOR_V1",
+   "q_comparability_scope": "cross_configuration_declared_window_peak_ratio",
+   "anchor_window_rule_id": "TWO_PARTICLE_50D_FULL_HORIZON_V1",
+   "control_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "q_anchor_relation_check": {
+    "A_raw_gt_A_frozen": true,
+    "q_decision_ge_q_raw_reference": true
+   }
+  }
+ ],
+ "n4_reference_ny801_harmonized": {
+  "comparison_id": "N-4-REF-NY801",
+  "pairing_class": "legacy_reference_harmonized",
+  "comparison_scope": "arm_local_finite_window",
+  "role": "n4_reference_input",
+  "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+  "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+  "paired_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+  "analysis_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+  "claim_generation_allowed": false,
+  "run_integrity_status": [
+   "ok",
+   "ok"
+  ],
+  "closure_schema_status": "ok_same_schema_pair",
+  "closure_schemas": [
+   "legacy",
+   "legacy"
+  ],
+  "pair_cadence_status": "ok",
+  "pair_common_prefix_count": 45,
+  "interpolation_applied": false,
+  "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+  "arm_eh_window_end_step": 22500,
+  "arm_eh_window_end_reason": "y_star_limit",
+  "arm_eh_window_end_trigger_set": [
+   "y_star_limit"
+  ],
+  "arm_eh_contact_detected": false,
+  "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+  "arm_none_window_end_step": 23500,
+  "arm_none_window_end_reason": "y_star_limit",
+  "arm_none_window_end_trigger_set": [
+   "y_star_limit"
+  ],
+  "arm_none_contact_detected": false,
+  "runtime_termination_contract_status": "not_applicable_legacy_reference",
+  "signed_shift_raw": -14.276228744463094
+ },
+ "n4_grid_stability": {
+  "comparison_scope": "direct_harmonized_window",
+  "external_display_scope": "harmonized-window comparison",
+  "external_display_directness": "B \u2014 cross-version baseline, partially bridged",
+  "grid_reference": "N-4-REF-NY801",
+  "stability_threshold_pp": 1.639,
+  "claim_generation_allowed": false,
+  "solver_lineage_class": {
+   "reference_801": "cross_version",
+   "ny961": "current_version",
+   "ny1281": "current_version"
+  },
+  "eh_lineage_bridge_status": "bridged_by_g2_gate",
+  "none_lineage_bridge_status": "not_independently_rerun",
+  "comparison_directness_grade": "B_cross_version_bridged",
+  "claim_scope_note": "stability of the declared finite-window contrast under the tested coupled space-time refinement; formal grid convergence / code-version-independent convergence \uae08\uc9c0",
+  "comparison_window_compatibility": {
+   "observable_formula_id_equal": true,
+   "extractor_identical": true,
+   "contact_rule_id_equal": true,
+   "analysis_window_definition_id_equal": true,
+   "tick_ny961": {
+    "interpolation_applied": false,
+    "native_sample_count": [
+     45,
+     45
+    ],
+    "expected_sample_count": 45,
+    "exact_tick_alignment_status": "ok",
+    "first_common_tick": [
+     500,
+     720
+    ],
+    "last_common_tick": [
+     22500,
+     32400
+    ],
+    "checked_prefix_count": 45,
+    "native_full_record_count": [
+     75,
+     75
+    ]
+   },
+   "tick_ny1281": {
+    "interpolation_applied": false,
+    "native_sample_count": [
+     44,
+     44
+    ],
+    "expected_sample_count": 44,
+    "exact_tick_alignment_status": "ok",
+    "first_common_tick": [
+     500,
+     1280
+    ],
+    "last_common_tick": [
+     22000,
+     56320
+    ],
+    "checked_prefix_count": 44,
+    "native_full_record_count": [
+     75,
+     74
+    ]
+   }
+  },
+  "direct_comparison_allowed": true,
+  "metric_comparison_allowed": true,
+  "comparison_window_compatibility_status": "ok",
+  "s_801_harmonized": -14.276228744463094,
+  "s_961": -15.316237056377908,
+  "s_1281": -15.846097519877546,
+  "n4_conditions": {
+   "sign_consistent": true,
+   "contraction": true,
+   "final_delta_within_threshold_pp": true
+  },
+  "n4_stability_status": "stable_under_coupled_space_time_refinement"
+ },
+ "n1_context_50d_harmonized": [
+  {
+   "comparison_id": "N-1-MDF-50D-CONTEXT",
+   "pairing_class": "legacy_reference_harmonized",
+   "comparison_scope": "arm_local_finite_window",
+   "role": "non_decisional_context",
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "analysis_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+   "claim_generation_allowed": false,
+   "run_integrity_status": [
+    "ok",
+    "ok"
+   ],
+   "closure_schema_status": "ok_same_schema_pair",
+   "closure_schemas": [
+    "current",
+    "current"
+   ],
+   "pair_cadence_status": "ok",
+   "pair_common_prefix_count": 45,
+   "interpolation_applied": false,
+   "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_eh_window_end_step": 22500,
+   "arm_eh_window_end_reason": "y_star_limit",
+   "arm_eh_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_eh_contact_detected": false,
+   "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_none_window_end_step": 23500,
+   "arm_none_window_end_reason": "y_star_limit",
+   "arm_none_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_none_contact_detected": false,
+   "runtime_termination_contract_status": "not_applicable_legacy_reference",
+   "signed_shift_raw": -14.20201016915161
+  },
+  {
+   "comparison_id": "N-1-DFC-50D-CONTEXT",
+   "pairing_class": "legacy_reference_harmonized",
+   "comparison_scope": "arm_local_finite_window",
+   "role": "non_decisional_context",
+   "contact_crossing_rule_id": "CENTER_DISTANCE_LE_D_V1",
+   "observable_formula_id": "PEAK_RE_F_SPEED_NORM_V1",
+   "paired_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "analysis_window_definition_id": "STD50_ARMLOCAL_PRECONTACT_YSTAR15P5_STORED_SAMPLE_V1",
+   "claim_generation_allowed": false,
+   "run_integrity_status": [
+    "ok",
+    "ok"
+   ],
+   "closure_schema_status": "ok_same_schema_pair",
+   "closure_schemas": [
+    "current",
+    "current"
+   ],
+   "pair_cadence_status": "ok",
+   "pair_common_prefix_count": 44,
+   "interpolation_applied": false,
+   "arm_eh_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_eh_window_end_step": 22000,
+   "arm_eh_window_end_reason": "y_star_limit",
+   "arm_eh_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_eh_contact_detected": false,
+   "arm_none_window_rule_id": "ARM_LOCAL_PRECONTACT_V1",
+   "arm_none_window_end_step": 23500,
+   "arm_none_window_end_reason": "y_star_limit",
+   "arm_none_window_end_trigger_set": [
+    "y_star_limit"
+   ],
+   "arm_none_contact_detected": false,
+   "runtime_termination_contract_status": "not_applicable_legacy_reference",
+   "signed_shift_raw": -18.938681756526396
+  }
+ ]
+}

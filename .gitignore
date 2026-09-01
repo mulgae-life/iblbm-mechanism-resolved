@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Local archive directory
+.archive/
+
+# Local raw outputs (excluded per Data Availability statement).
+# The bundled Taylor-Green convergence arrays are the one exception.
+*.npz
+!data/**/convergence.npz
+
+# Analysis outputs regenerated next to the scripts (canonical copies of the
+# first four are tracked under data/; a9_table_c1_result.json is a
+# recomputation check with no bundled canonical)
+scripts/analysis/a1_phase_result.json
+scripts/analysis/a1_s44_astar_series.json
+scripts/analysis/n_singles_result.json
+scripts/analysis/immutable_table_n_series.json
+scripts/analysis/a9_table_c1_result.json

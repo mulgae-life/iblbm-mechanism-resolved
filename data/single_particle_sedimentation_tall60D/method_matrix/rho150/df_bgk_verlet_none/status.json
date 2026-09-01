@@ -1,0 +1,62 @@
+{
+  "experiment_type": "sedimentation",
+  "completed": true,
+  "step": 205200,
+  "elapsed_sec": 13543.5,
+  "elapsed_str": "3h 45m 43s",
+  "interval_time": 6.34,
+  "converged": false,
+  "vy_star": 0.651205,
+  "y_star": 51.5155,
+  "vx_star": -0.132987,
+  "particle_x": 0.50019,
+  "particle_y": 0.060562,
+  "config": {
+    "rho_ratio": 1.5,
+    "ibm_method": "DF",
+    "delta_type": "peskin4pt",
+    "collision_model": "BGK",
+    "settling_inertia_model": "none",
+    "NN": 1281,
+    "max_steps": 519615,
+    "check_interval": 100,
+    "gravity": 1.7066666666666677e-05,
+    "gravity_direction": "down",
+    "time_integrator": "verlet",
+    "enable_rotation": true,
+    "rotation_coupling": "indirect",
+    "marker_spacing_factor": 1.0,
+    "retraction_dx": 0.0,
+    "mdf_iterations": 1,
+    "incompressible_lbgk": false,
+    "sedimentation_stop_at_contact": true,
+    "sedimentation_stop_offset_d": 0.0,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_euler_update_scheme": "new_velocity",
+    "case_name": "tall60D"
+  },
+  "updated_at": "2026-07-26T01:42:02",
+  "final_step": 205200,
+  "termination_reason": "contact",
+  "Re_standard_peaks": [
+    348.7
+  ],
+  "Re_particle_basis_peaks": [
+    523.04
+  ],
+  "Re_reference_peaks": [
+    523.04
+  ],
+  "peak_steps": [
+    111500
+  ],
+  "history_len": 2052,
+  "re_reference_basis": "particle_basis",
+  "Re_standard_peak": 348.7,
+  "Re_particle_basis_peak": 523.04,
+  "Re_reference_peak": 523.04,
+  "case_id": "TALL60D_RHO150_DF_BGK_VERLET_NONE",
+  "kind": "single_particle",
+  "run_path": "single_particle_sedimentation_tall60D_experiments",
+  "config_signature": "47c1950d73ee3b62"
+}

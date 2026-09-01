@@ -1,0 +1,61 @@
+{
+  "experiment_type": "sedimentation",
+  "completed": true,
+  "step": 48000,
+  "elapsed_sec": 2627.9,
+  "elapsed_str": "43m 47s",
+  "interval_time": 27.73,
+  "converged": false,
+  "vy_star": -0.022173,
+  "y_star": 42.0362,
+  "vx_star": 1.062378,
+  "particle_x": 4.803623,
+  "particle_y": 0.5533,
+  "config": {
+    "rho_ratio": 1.25,
+    "ibm_method": "DF",
+    "delta_type": "peskin4pt",
+    "collision_model": "BGK",
+    "settling_inertia_model": "explicit_history",
+    "NN": 801,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "gravity": 0.00021559774464000001,
+    "gravity_direction": "right",
+    "time_integrator": "verlet",
+    "enable_rotation": true,
+    "rotation_coupling": "semi_implicit",
+    "marker_spacing_factor": 0.83,
+    "retraction_dx": 0.0,
+    "mdf_iterations": 1,
+    "incompressible_lbgk": false,
+    "sedimentation_stop_at_contact": false,
+    "sedimentation_stop_offset_d": 2.0,
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_euler_update_scheme": "new_velocity"
+  },
+  "updated_at": "2026-07-25T13:43:08",
+  "final_step": 48000,
+  "termination_reason": "offset",
+  "Re_standard_peaks": [
+    208.46
+  ],
+  "Re_particle_basis_peaks": [
+    260.58
+  ],
+  "Re_reference_peaks": [
+    208.46
+  ],
+  "peak_steps": [
+    22500
+  ],
+  "history_len": 96,
+  "re_reference_basis": "standard",
+  "Re_standard_peak": 208.46,
+  "Re_particle_basis_peak": 260.58,
+  "Re_reference_peak": 208.46,
+  "case_id": "TWO_PARTICLE_ISOLATED_LIGHT_EXPLICIT_HISTORY",
+  "kind": "two_particle",
+  "run_path": "two_particle_sedimentation_experiments",
+  "config_signature": "426e12287ec91008"
+}

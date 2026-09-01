@@ -1,0 +1,230 @@
+{
+  "config": {
+    "Re": 100.0,
+    "KC": 5.0,
+    "tail_fraction": 0.5
+  },
+  "reference": {
+    "Dutsch1998": {
+      "Cd_peak": 2.09
+    }
+  },
+  "cases": [
+    {
+      "name": "df_bgk_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0482,
+      "Cd_min_50tail": 0.0031,
+      "Cd_amp_50tail": 1.0225,
+      "Cd_mean_50tail": 1.3523,
+      "Cl_amp_50tail": 0.0001,
+      "gap_pct_Cdpeak_Dutsch1998": -2.0
+    },
+    {
+      "name": "df_bgk_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0305,
+      "Cd_min_50tail": 0.0039,
+      "Cd_amp_50tail": 1.0133,
+      "Cd_mean_50tail": 1.3496,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -2.85
+    },
+    {
+      "name": "df_cm_mrt_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0479,
+      "Cd_min_50tail": 0.0027,
+      "Cd_amp_50tail": 1.0226,
+      "Cd_mean_50tail": 1.352,
+      "Cl_amp_50tail": 0.0001,
+      "gap_pct_Cdpeak_Dutsch1998": -2.01
+    },
+    {
+      "name": "df_cm_mrt_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0303,
+      "Cd_min_50tail": 0.004,
+      "Cd_amp_50tail": 1.0132,
+      "Cd_mean_50tail": 1.3495,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -2.86
+    },
+    {
+      "name": "df_trt_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0454,
+      "Cd_min_50tail": 0.0008,
+      "Cd_amp_50tail": 1.0223,
+      "Cd_mean_50tail": 1.3503,
+      "Cl_amp_50tail": 0.0001,
+      "gap_pct_Cdpeak_Dutsch1998": -2.13
+    },
+    {
+      "name": "df_trt_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0291,
+      "Cd_min_50tail": 0.0042,
+      "Cd_amp_50tail": 1.0124,
+      "Cd_mean_50tail": 1.3486,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -2.92
+    },
+    {
+      "name": "dfc_bgk_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0146,
+      "Cd_min_50tail": 0.0032,
+      "Cd_amp_50tail": 1.0057,
+      "Cd_mean_50tail": 1.3385,
+      "Cl_amp_50tail": 0.0001,
+      "gap_pct_Cdpeak_Dutsch1998": -3.61
+    },
+    {
+      "name": "dfc_bgk_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0501,
+      "Cd_min_50tail": 0.0029,
+      "Cd_amp_50tail": 1.0236,
+      "Cd_mean_50tail": 1.3624,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -1.91
+    },
+    {
+      "name": "dfc_cm_mrt_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0145,
+      "Cd_min_50tail": 0.0036,
+      "Cd_amp_50tail": 1.0054,
+      "Cd_mean_50tail": 1.3384,
+      "Cl_amp_50tail": 0.0001,
+      "gap_pct_Cdpeak_Dutsch1998": -3.61
+    },
+    {
+      "name": "dfc_cm_mrt_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.05,
+      "Cd_min_50tail": 0.0029,
+      "Cd_amp_50tail": 1.0236,
+      "Cd_mean_50tail": 1.3623,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -1.91
+    },
+    {
+      "name": "dfc_trt_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0138,
+      "Cd_min_50tail": 0.0046,
+      "Cd_amp_50tail": 1.0046,
+      "Cd_mean_50tail": 1.3382,
+      "Cl_amp_50tail": 0.0001,
+      "gap_pct_Cdpeak_Dutsch1998": -3.64
+    },
+    {
+      "name": "dfc_trt_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0498,
+      "Cd_min_50tail": 0.003,
+      "Cd_amp_50tail": 1.0234,
+      "Cd_mean_50tail": 1.362,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -1.92
+    },
+    {
+      "name": "mdf_bgk_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0309,
+      "Cd_min_50tail": 0.0014,
+      "Cd_amp_50tail": 1.0147,
+      "Cd_mean_50tail": 1.353,
+      "Cl_amp_50tail": 0.0002,
+      "gap_pct_Cdpeak_Dutsch1998": -2.83
+    },
+    {
+      "name": "mdf_bgk_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 1.9575,
+      "Cd_min_50tail": 0.0093,
+      "Cd_amp_50tail": 0.9741,
+      "Cd_mean_50tail": 1.3157,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -6.34
+    },
+    {
+      "name": "mdf_cm_mrt_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0327,
+      "Cd_min_50tail": 0.0012,
+      "Cd_amp_50tail": 1.0157,
+      "Cd_mean_50tail": 1.354,
+      "Cl_amp_50tail": 0.0002,
+      "gap_pct_Cdpeak_Dutsch1998": -2.74
+    },
+    {
+      "name": "mdf_cm_mrt_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 1.9613,
+      "Cd_min_50tail": 0.0089,
+      "Cd_amp_50tail": 0.9762,
+      "Cd_mean_50tail": 1.3173,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -6.16
+    },
+    {
+      "name": "mdf_trt_hat",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 2.0349,
+      "Cd_min_50tail": 0.0011,
+      "Cd_amp_50tail": 1.0169,
+      "Cd_mean_50tail": 1.3549,
+      "Cl_amp_50tail": 0.0002,
+      "gap_pct_Cdpeak_Dutsch1998": -2.64
+    },
+    {
+      "name": "mdf_trt_p4",
+      "step_final": 40000,
+      "tail_start_step": 20050,
+      "tail_n_samples": 400,
+      "Cd_peak_50tail": 1.972,
+      "Cd_min_50tail": 0.0075,
+      "Cd_amp_50tail": 0.9823,
+      "Cd_mean_50tail": 1.3217,
+      "Cl_amp_50tail": 0.0,
+      "gap_pct_Cdpeak_Dutsch1998": -5.64
+    }
+  ]
+}

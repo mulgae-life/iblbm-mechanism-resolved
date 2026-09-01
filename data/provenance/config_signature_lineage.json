@@ -1,0 +1,1457 @@
+{
+ "description": "Lineage manifest for the 19 bundled sedimentation runs whose stored config_signature does not recompute with the bundled runner. Each entry gives the run's status file, the configuration payload reconstructed from the authors' private development history whose SHA-256 16-hex prefix reproduces the stored signature, the payload produced by the bundled runner, and the field-level difference. All differences are configuration-schema evolution (fields renamed or added); no field present on both sides changed value. The legacy encoding maps onto the current settling_inertia_model as: use_added_mass=true -> explicit_history; otherwise imc_method carries the model name (none/feng_b2); later development payloads already use settling_inertia_model directly and differ only in added fields (xmax, incompressible_lbgk).",
+ "signature_definition": "sha256(json.dumps(payload, sort_keys=True, separators=(',', ':')))[:16]",
+ "revision_note": "signature_reproducing_revisions lists every tested revision of the authors' private development history whose runner reproduces the stored signature for that run; where more than one is listed, the schema was shared across those revisions and the manifest does not identify which one executed the run. These identifiers index a private history and are not resolvable from this repository; they are recorded for provenance completeness.",
+ "runs": {
+  "SINGLE_RHO150_DFC_TRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/dfc_trt_verlet_explicit_history/status.json",
+   "stored_signature": "c7bdf6baa1d589cf",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_DFC_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_DFC_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "SINGLE_RHO150_DF_BGK_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/df_bgk_verlet_explicit_history/status.json",
+   "stored_signature": "9e9488f695184bbc",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_DF_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_DF_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "SINGLE_RHO150_DF_BGK_VERLET_FENG_B2": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/df_bgk_verlet_feng_b2/status.json",
+   "stored_signature": "ddfc07a9abc1535e",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_DF_BGK_VERLET_FENG_B2",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "feng_b2",
+    "imc_method": "feng_b2",
+    "use_added_mass": false,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_DF_BGK_VERLET_FENG_B2",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "feng_b2",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "feng_b2",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     false,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "SINGLE_RHO150_DF_BGK_VERLET_NONE": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/df_bgk_verlet_none/status.json",
+   "stored_signature": "bbddba13ebbfbb7d",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_DF_BGK_VERLET_NONE",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "imc_method": "none",
+    "use_added_mass": false,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_DF_BGK_VERLET_NONE",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     false,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "SINGLE_RHO150_DF_CM_MRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/df_cm_mrt_verlet_explicit_history/status.json",
+   "stored_signature": "a59269df9cb02ef8",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_DF_CM_MRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "CM_MRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_DF_CM_MRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "CM_MRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "SINGLE_RHO150_DF_TRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/df_trt_verlet_explicit_history/status.json",
+   "stored_signature": "9f8405e0159d271c",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_DF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_DF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "SINGLE_RHO150_MDF_TRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/single_particle_sedimentation/method_matrix/rho150/mdf_trt_verlet_explicit_history/status.json",
+   "stored_signature": "e7c67b9f7996752e",
+   "reconstructed_legacy_payload": {
+    "case_id": "SINGLE_RHO150_MDF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "bundled_runner_payload": {
+    "case_id": "SINGLE_RHO150_MDF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 1281,
+    "Re": 276.6992952647333,
+    "rho_ratio": 1.5,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "sedimentation_reference_basis": "particle_basis",
+    "sedimentation_stop_at_contact": true,
+    "marker_spacing_factor": 1.0,
+    "max_steps": 207846,
+    "check_interval": 100
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b",
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "TWO_PARTICLE_DFC_BGK_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/dfc_bgk_verlet_explicit_history/status.json",
+   "stored_signature": "31db8d1dc8ed5971",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DFC_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DFC_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "fef52f0df79e225f8f5d92cea1763d7f72ef44b8"
+   ]
+  },
+  "TWO_PARTICLE_DFC_BGK_VERLET_NONE": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/dfc_bgk_verlet_none/status.json",
+   "stored_signature": "189246f40af04c2e",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DFC_BGK_VERLET_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DFC_BGK_VERLET_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "fef52f0df79e225f8f5d92cea1763d7f72ef44b8"
+   ]
+  },
+  "TWO_PARTICLE_DFC_TRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/dfc_trt_verlet_explicit_history/status.json",
+   "stored_signature": "de08d8658974552d",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DFC_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DFC_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DFC",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "incompressible_lbgk": [
+     "<absent>",
+     false
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b"
+   ]
+  },
+  "TWO_PARTICLE_DF_BGK_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/df_bgk_verlet_explicit_history/status.json",
+   "stored_signature": "07451e20667ec917",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DF_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DF_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "incompressible_lbgk": [
+     "<absent>",
+     false
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b"
+   ]
+  },
+  "TWO_PARTICLE_DF_BGK_VERLET_FENG_B2": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/df_bgk_verlet_feng_b2/status.json",
+   "stored_signature": "871fa903d10eedb3",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DF_BGK_VERLET_FENG_B2",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "feng_b2",
+    "imc_method": "feng_b2",
+    "use_added_mass": false,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DF_BGK_VERLET_FENG_B2",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "feng_b2",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "feng_b2",
+     "<absent>"
+    ],
+    "incompressible_lbgk": [
+     "<absent>",
+     false
+    ],
+    "use_added_mass": [
+     false,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b"
+   ]
+  },
+  "TWO_PARTICLE_DF_BGK_VERLET_NONE": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/df_bgk_verlet_none/status.json",
+   "stored_signature": "a28a4e87186edbb4",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DF_BGK_VERLET_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "imc_method": "none",
+    "use_added_mass": false,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DF_BGK_VERLET_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "incompressible_lbgk": [
+     "<absent>",
+     false
+    ],
+    "use_added_mass": [
+     false,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b"
+   ]
+  },
+  "TWO_PARTICLE_DF_CM_MRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/df_cm_mrt_verlet_explicit_history/status.json",
+   "stored_signature": "9f1870662e4b5057",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DF_CM_MRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "CM_MRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DF_CM_MRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "CM_MRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "incompressible_lbgk": [
+     "<absent>",
+     false
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b"
+   ]
+  },
+  "TWO_PARTICLE_DF_TRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/df_trt_verlet_explicit_history/status.json",
+   "stored_signature": "1a7613ea777af1de",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_DF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_DF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "incompressible_lbgk": [
+     "<absent>",
+     false
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "8f8a7fa1da422216b784faf68533191083eff30b"
+   ]
+  },
+  "TWO_PARTICLE_MDF_BGK_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/mdf_bgk_verlet_explicit_history/status.json",
+   "stored_signature": "be2b4d2e3685f090",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_MDF_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_MDF_BGK_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "fef52f0df79e225f8f5d92cea1763d7f72ef44b8"
+   ]
+  },
+  "TWO_PARTICLE_MDF_BGK_VERLET_NONE": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/mdf_bgk_verlet_none/status.json",
+   "stored_signature": "23dfd2aa45967455",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_MDF_BGK_VERLET_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_MDF_BGK_VERLET_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "fef52f0df79e225f8f5d92cea1763d7f72ef44b8"
+   ]
+  },
+  "TWO_PARTICLE_MDF_TRT_VERLET_EXPLICIT_HISTORY": {
+   "status_path": "data/two_particle_sedimentation/method_matrix/mdf_trt_verlet_explicit_history/status.json",
+   "stored_signature": "3ef2c98770b10f1d",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_MDF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "imc_method": "none",
+    "use_added_mass": true,
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_MDF_TRT_VERLET_EXPLICIT_HISTORY",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "MDF",
+    "collision_model": "TRT",
+    "delta_type": "peskin4pt",
+    "time_integrator": "verlet",
+    "settling_inertia_model": "explicit_history",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": false,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "imc_method": [
+     "none",
+     "<absent>"
+    ],
+    "use_added_mass": [
+     true,
+     "<absent>"
+    ],
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "28758a466c0384191745d5d903e4f9ff528deb0e"
+   ]
+  },
+  "TWO_PARTICLE_REFERENCE_NONE": {
+   "status_path": "data/two_particle_sedimentation/reference_ablation/reference_none/status.json",
+   "stored_signature": "47dcf7c9ed5547f8",
+   "reconstructed_legacy_payload": {
+    "case_id": "TWO_PARTICLE_REFERENCE_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "euler_explicit",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": true,
+    "max_steps": 60000,
+    "check_interval": 500
+   },
+   "bundled_runner_payload": {
+    "case_id": "TWO_PARTICLE_REFERENCE_NONE",
+    "NN": 801,
+    "Re": 247.64002240671851,
+    "bc_type": "settling_channel",
+    "ibm_method": "DF",
+    "collision_model": "BGK",
+    "delta_type": "peskin4pt",
+    "time_integrator": "euler_explicit",
+    "settling_inertia_model": "none",
+    "rotation_coupling": "semi_implicit",
+    "particles_config": [
+     {
+      "center": [
+       0.4,
+       0.435
+      ],
+      "rho_ratio": 1.5
+     },
+     {
+      "center": [
+       0.6,
+       0.565
+      ],
+      "rho_ratio": 1.25
+     }
+    ],
+    "sedimentation_reference_basis": "standard",
+    "sedimentation_stop_offset_d": 2.0,
+    "marker_spacing_factor": 0.83,
+    "incompressible_lbgk": true,
+    "max_steps": 60000,
+    "check_interval": 500,
+    "xmax": 5.0
+   },
+   "changed_fields": {
+    "xmax": [
+     "<absent>",
+     5.0
+    ]
+   },
+   "signature_reproducing_revisions": [
+    "fef52f0df79e225f8f5d92cea1763d7f72ef44b8"
+   ]
+  }
+ }
+}

@@ -1,0 +1,348 @@
+{
+ "analysis": "N-3/N-5/N-8 (+N-2) locked confirmation",
+ "spec": {
+  "metric": "A-9 unsmoothed max |v_y|*/u_g \u00d7 cfg.Re",
+  "windows": {
+   "std": 15.5,
+   "t60": [
+    15.5,
+    51.5
+   ],
+   "t80_two_particle": 71.5
+  },
+  "spread_denominator": 503.38,
+  "spread_band_pct": 1.3,
+  "baseline_std_Re_f_vy": 336.30302636503865
+ },
+ "n3": {
+  "arms": {
+   "ret00": {
+    "dir": "single_particle_sedimentation/marker_offset/rho150_df_bgk_verlet_eh_ret00",
+    "admissible": {
+     "n_input": 676,
+     "n_admissible": 675,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67600,
+     "last_admissible_step": 67500
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2154097683670602,
+    "Re_f_vy": 336.30302636503825,
+    "peak_step": 58200,
+    "speed_star_max": 1.215410295649506,
+    "Re_f_speed": 336.30317226371943,
+    "speed_vs_vy_pct": 4.338310088097641e-05
+   },
+   "ret03": {
+    "dir": "single_particle_sedimentation/marker_offset/rho150_df_bgk_verlet_eh_ret03",
+    "admissible": {
+     "n_input": 674,
+     "n_admissible": 673,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67400,
+     "last_admissible_step": 67300
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2184104377995768,
+    "Re_f_vy": 337.13330948233806,
+    "peak_step": 58200,
+    "speed_star_max": 1.2184110135488693,
+    "Re_f_speed": 337.1334687917615,
+    "speed_vs_vy_pct": 4.725413330370496e-05
+   },
+   "ret05": {
+    "dir": "single_particle_sedimentation/marker_offset/rho150_df_bgk_verlet_eh_ret05",
+    "admissible": {
+     "n_input": 673,
+     "n_admissible": 672,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67300,
+     "last_admissible_step": 67200
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2204272162995047,
+    "Re_f_vy": 337.69135067197317,
+    "peak_step": 58100,
+    "speed_star_max": 1.2204277824401,
+    "Re_f_speed": 337.6915073226769,
+    "speed_vs_vy_pct": 4.6388722549913324e-05
+   },
+   "ret10": {
+    "dir": "single_particle_sedimentation/marker_offset/rho150_df_bgk_verlet_eh_ret10",
+    "admissible": {
+     "n_input": 670,
+     "n_admissible": 669,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67000,
+     "last_admissible_step": 66900
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2255036384175126,
+    "Re_f_vy": 339.09599309449226,
+    "peak_step": 58100,
+    "speed_star_max": 1.2255043184940873,
+    "Re_f_speed": 339.0961812712012,
+    "speed_vs_vy_pct": 5.549363978134297e-05
+   }
+  },
+  "g1_gate": {
+   "dev_pct_vs_locked_baseline": -1.1831708335379444e-13,
+   "pass": true
+  },
+  "delta_pct_vs_ret00": {
+   "ret03": 0.2468854135135221,
+   "ret05": 0.41281945094004896,
+   "ret10": 0.8304911078684132
+  },
+  "monotone": true,
+  "direction": "increasing",
+  "abs_delta_Re_f": {
+   "ret03": 0.830283117299814,
+   "ret05": 1.3883243069349192,
+   "ret10": 2.792966729454008
+  }
+ },
+ "n5": {
+  "MDF": {
+   "eh": {
+    "dir": "single_particle_sedimentation/method_matrix/rho150/mdf_bgk_verlet_explicit_history_p4",
+    "admissible": {
+     "n_input": 672,
+     "n_admissible": 671,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67200,
+     "last_admissible_step": 67100
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2258167677086227,
+    "Re_f_vy": 339.18263574866916,
+    "peak_step": 58100,
+    "speed_star_max": 1.2258167869752208,
+    "Re_f_speed": 339.1826410797233,
+    "speed_vs_vy_pct": 1.5717355645833636e-06
+   },
+   "none": {
+    "dir": "single_particle_sedimentation/method_matrix/rho150/mdf_bgk_verlet_none",
+    "admissible": {
+     "n_input": 710,
+     "n_admissible": 709,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 71000,
+     "last_admissible_step": 70900
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2096801383911469,
+    "Re_f_vy": 334.71764178857535,
+    "peak_step": 64400,
+    "speed_star_max": 1.2096801395976522,
+    "Re_f_speed": 334.71764212241453,
+    "speed_vs_vy_pct": 9.973755059610753e-08
+   },
+   "Re_p_eh": 508.77395362300376,
+   "Re_p_none": 502.07646268286305,
+   "spread_abs_Re_p": 6.69749094014071,
+   "spread_pct_wang_denom": 1.3305039811157993,
+   "within_band": false
+  },
+  "DFC": {
+   "eh": {
+    "dir": "single_particle_sedimentation/method_matrix/rho150/dfc_bgk_verlet_explicit_history_p4",
+    "admissible": {
+     "n_input": 674,
+     "n_admissible": 673,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67400,
+     "last_admissible_step": 67300
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2202556277219672,
+    "Re_f_vy": 337.643872233493,
+    "peak_step": 58200,
+    "speed_star_max": 1.2202556296032399,
+    "Re_f_speed": 337.6438727540399,
+    "speed_vs_vy_pct": 1.5417037630834572e-07
+   },
+   "none": {
+    "dir": "single_particle_sedimentation/method_matrix/rho150/dfc_bgk_verlet_none",
+    "admissible": {
+     "n_input": 712,
+     "n_admissible": 711,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 71200,
+     "last_admissible_step": 71100
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2044509184715195,
+    "Re_f_vy": 333.2707203220302,
+    "peak_step": 64400,
+    "speed_star_max": 1.2044509186835894,
+    "Re_f_speed": 333.27072038070975,
+    "speed_vs_vy_pct": 1.7607186306247452e-08
+   },
+   "Re_p_eh": 506.4658083502395,
+   "Re_p_none": 499.90608048304523,
+   "spread_abs_Re_p": 6.559727867194283,
+   "spread_pct_wang_denom": 1.3031363715670632,
+   "within_band": false
+  }
+ },
+ "n8": {
+  "dir": "two_particle_sedimentation/extended_80D/df_bgk_verlet_none_80D",
+  "completed": true,
+  "termination_reason": "offset",
+  "window": {
+   "ystar_limit": 71.5,
+   "end_reason": "run_end",
+   "end_t_star": 52.12197250874145,
+   "n_admissible": 127
+  },
+  "judgment": {
+   "eps_low_pct": 0.8,
+   "eps_high_pct": 0.9,
+   "class_eps_low": "right_censored",
+   "class_eps_high": "right_censored",
+   "completion_status": "right_censored",
+   "observable_status": "right_edge_censored_window_maximum",
+   "value_eps_low": 100.0,
+   "value_eps_high": 100.0,
+   "consensus_rule_id": "C1_right_censored_precedence",
+   "observable_rule_id": "B1_post_peak_samples_lt8",
+   "right_censor_support": "epsilon_independent_edge_peak",
+   "qa_status": "ok",
+   "claim_generation_allowed": true,
+   "classifier_sha256": "0ce0705f96f48ae572bdb5bc1ca50f50a1bbdf76d1ad996b569f1b1687b28d3e",
+   "manifest_ref": "manifest_v1 + amendments 001-011"
+  },
+  "paired_comparison": "forbidden_by_manifest(\ub2e8\uc77c-arm \uc9c4\ub2e8 \uc804\uc6a9)"
+ },
+ "n2": {
+  "std_15p5": {
+   "eh": {
+    "dir": "single_particle_sedimentation_tall60D/method_matrix/rho150/df_bgk_verlet_explicit_history",
+    "admissible": {
+     "n_input": 2030,
+     "n_admissible": 670,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 67100,
+     "last_admissible_step": 67000
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2323811176203023,
+    "Re_f_vy": 340.998986743102,
+    "peak_step": 67000,
+    "speed_star_max": 1.2323812126616862,
+    "Re_f_speed": 340.999013040986,
+    "speed_vs_vy_pct": 7.712012340596728e-06
+   },
+   "none": {
+    "dir": "single_particle_sedimentation_tall60D/method_matrix/rho150/df_bgk_verlet_none",
+    "admissible": {
+     "n_input": 2052,
+     "n_admissible": 709,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 71000,
+     "last_admissible_step": 70900
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2191312496811353,
+    "Re_f_vy": 337.3327576219837,
+    "peak_step": 70900,
+    "speed_star_max": 1.2191312644872516,
+    "Re_f_speed": 337.3327617188257,
+    "speed_vs_vy_pct": 1.2144809130969021e-06
+   },
+   "Re_p_eh": 511.49848011465303,
+   "Re_p_none": 505.99913643297555,
+   "spread_pct_wang_denom": 1.0924835475540324,
+   "within_band": true
+  },
+  "t60_51p5": {
+   "eh": {
+    "dir": "single_particle_sedimentation_tall60D/method_matrix/rho150/df_bgk_verlet_explicit_history",
+    "admissible": {
+     "n_input": 2030,
+     "n_admissible": 2029,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 203000,
+     "last_admissible_step": 202900
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.261368194748523,
+    "Re_f_vy": 349.0196905562651,
+    "peak_step": 99600,
+    "speed_star_max": 1.2620882566222418,
+    "Re_f_speed": 349.21893116927015,
+    "speed_vs_vy_pct": 0.05708578008520555
+   },
+   "none": {
+    "dir": "single_particle_sedimentation_tall60D/method_matrix/rho150/df_bgk_verlet_none",
+    "admissible": {
+     "n_input": 2052,
+     "n_admissible": 2051,
+     "excluded_nonfinite": 0,
+     "excluded_step_order": 0,
+     "excluded_domain": 0,
+     "excluded_jump": 0,
+     "truncated_at_step": 205200,
+     "last_admissible_step": 205100
+    },
+    "completed": true,
+    "termination_reason": "contact",
+    "vy_star_max": 1.2601120131845458,
+    "Re_f_vy": 348.6721060027881,
+    "peak_step": 111400,
+    "speed_star_max": 1.2601991921689104,
+    "Re_f_speed": 348.6962283663237,
+    "speed_vs_vy_pct": 0.006918351976051147
+   },
+   "Re_p_eh": 523.5295358343976,
+   "Re_p_none": 523.0081590041822,
+   "spread_pct_wang_denom": 0.10357519770659242,
+   "within_band": true
+  }
+ }
+}
